@@ -1,0 +1,42 @@
+.board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60vh;
+    margin: auto;
+    color: #42032C;
+}
+
+.board-slot {
+    width: 20vh;
+    height: 20vh;
+    font: 'Roboto';
+    font-size: 10vh;
+    background-color: #F1EFDC;
+    color: #D36B00;
+    border: 2px solid #42032C;
+    transition: background-color 0.1s;
+}
+
+.vacant-slot:hover {
+    background-color: #E6D2AA;
+}
+
+
+.reset {
+    background-color: #42032C;
+    color: #E6D2AA;
+    font: 'Roboto';
+    border-radius: 0.5em;
+    transition: scale 0.1s;
+}
+
+.reset:hover {
+    scale: 110%;
+}
+
+.reset:active {
+    scale: 105%;
+}
