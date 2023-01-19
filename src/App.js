@@ -4,7 +4,7 @@ import Board from './Board.js';
 function App() {
   return (
     <div className="App">
-      <h1>Tuq Tac Toe.</h1>
+      <h1>Tic Tac Toe.</h1>
       <Board />
     </div>
   );
