@@ -1,19 +1,22 @@
+:root {
+    --board-width: calc(min(60vh, 90vw))
+}
+
 .board {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 60vh;
+    width: var(--board-width);
     margin: auto;
-    color: #42032C;
 }
 
 .board-slot {
-    width: 20vh;
-    height: 20vh;
+    width: calc(var(--board-width) / 3);
+    height: calc(var(--board-width) / 3);
     font: 'Roboto';
-    font-size: 10vh;
+    font-size: calc(var(--board-width) / 6);
     background-color: #F1EFDC;
     color: #D36B00;
     border: 2px solid #42032C;
@@ -22,21 +25,4 @@
 
 .vacant-slot:hover {
     background-color: #E6D2AA;
-}
-
-
-.reset {
-    background-color: #42032C;
-    color: #E6D2AA;
-    font: 'Roboto';
-    border-radius: 0.5em;
-    transition: scale 0.1s;
-}
-
-.reset:hover {
-    scale: 110%;
-}
-
-.reset:active {
-    scale: 105%;
 }
