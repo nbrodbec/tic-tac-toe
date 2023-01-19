@@ -23,10 +23,10 @@ function Board() {
                     } 
                     key={`${i}-${j}`}
                     style={{
-                        borderLeftWidth: j === 0 ? 0 : '2px',
-                        borderRightWidth: j === 2 ? 0 : '2px',
-                        borderTopWidth: i === 0 ? 0 : '2px',
-                        borderBottomWidth: i === 2 ? 0 : '2px'
+                        borderLeftWidth: j === 0 ? 0 : '4px',
+                        borderRightWidth: j === 2 ? 0 : '4px',
+                        borderTopWidth: i === 0 ? 0 : '4px',
+                        borderBottomWidth: i === 2 ? 0 : '4px'
                     }}
                     onClick={() => {
                         let newState = makeMove(i, j);

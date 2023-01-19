@@ -19,7 +19,7 @@
     font-size: calc(var(--board-width) / 6);
     background-color: #F1EFDC;
     color: #D36B00;
-    border: 2px solid #42032C;
+    border: 4px solid #42032C;
     transition: background-color 0.1s;
 }
 
