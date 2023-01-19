@@ -1,6 +1,7 @@
 import './Board.css';
 import { useState } from 'react';
-import { getGameState, makeMove, newGame } from './Logic.js'
+import { getGameState, makeMove, newGame } from './Logic.js';
+import TextButton from './TextButton.js';
 
 const tokenMap = {
     1: 'X',
@@ -55,12 +56,9 @@ function Board() {
                     ''
                 }
             </h2>
-            <button 
-                className='reset' 
-                onClick={() => setGameState(newGame())}
-            >
+            <TextButton onClick={() => setGameState(newGame())}>
                 Reset Game
-            </button>
+            </TextButton>
         </>
     )
 }

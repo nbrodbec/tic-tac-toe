@@ -1,0 +1,25 @@
+.text-button {
+    background-color: #29041c;
+    color: #E6D2AA;
+    font-family: 'Roboto';
+    border-radius: 0.5em;
+    transition: scale 0.1s, transform 0.1s, border 0.1s;
+    border: 0;
+    padding: 0;
+}
+
+.text-button:hover {
+    scale: 110%;
+}
+
+.text-button .foreground {
+    background-color: #42032C;
+    padding: 0.5em;
+    border-radius: inherit;
+    transition: transform 0.1s;
+    transform: translateY(-4px);
+}
+
+.text-button:active .foreground {
+    transform: translateY(0);
+}
